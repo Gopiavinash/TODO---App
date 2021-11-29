@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.todos-bg-container {
+  background-color: #f9fbfe;
+  height: 100vh;
+}
+
+.todos-heading {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 46px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.create-task-heading {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.create-task-heading-subpart {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.todo-items-heading {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.todo-items-heading-subpart {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.todo-items-container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.todo-item-container {
+  margin-top: 15px;
+}
+
+.todo-user-input {
+  background-color: white;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e7eb;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.button {
+  color: white;
+  background-color: #4c63b6;
+  font-family: "Roboto";
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+#todo-list {
+  margin-top: 40px;
+}
+#todo-list > .task {
+  padding: 10px;
+  background: #f3f3f3;
+  margin: 5px 0;
+  font-family: monospace;
+}
+
+#todo-list > .task > p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#todo-list > .task > input {
+  vertical-align: middle;
+}
+
+#todo-list > .task > input:checked + p {
+  text-decoration: line-through;
+}
+#todo-list > .task > input:checked ~ span.trash {
+  display: inline !important;
+}
+
+#todo-list > .task > span.trash {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: none;
+}
